@@ -1,0 +1,48 @@
+{
+  "name": "validate-function",
+  "version": "0.0.0",
+  "description": "validate",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha  --require babel-register test/src.test.js",
+    "build": "babel src -d dist",
+    "pb": "npm run test && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changlin-cn/validate-function.git"
+  },
+  "keywords": [
+    "validate"
+  ],
+  "author": "changlin-cn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/changlin-cn/validate-function/issues"
+  },
+  "homepage": "https://github.com/changlin-cn/validate-function#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.1",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.5.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "changlin-util": "^2.6.1",
+    "changlin-warning": "^1.1.1"
+  }
+}
